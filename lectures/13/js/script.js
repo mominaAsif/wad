@@ -19,6 +19,24 @@ var questions = [{
         "for",
         "none of the above"],
     correctAnswer : 1
+},{
+    question : "Who is the strongest?",
+    choices: [
+          "Superman",
+        "The Terminator",
+         "Waluigi, obviously"],
+    correctAnswer : 1
+},
+    {
+        question: "Where is Waldo really?",
+    answers: [
+     "Antarctica",
+         "Exploring the Pacific Ocean",
+         "Sitting in a tree",
+         "Minding his own business, so stop asking"
+        ],
+
+correctAnswer: "d"
 }];
 
 var currentQuestion = 0;
@@ -27,11 +45,13 @@ var quizOver = false;
 displayCurrentQuestion();
 document.getElementById("quiz-message").style.display = 'none';
 function displayNext() {
-    /*Write your code here */
+
+    const nextButton = document.getElementById("next");
 }
 
 function displayCurrentQuestion() {
-    /*Write your code here */
+    
+    const currentButton = document.getElementById("current");
 }
 
 function resetQuiz() {
